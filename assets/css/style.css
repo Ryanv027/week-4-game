@@ -33,6 +33,14 @@ body {
 
 .crystals {
     margin-top: 10px;
+    cursor: pointer;
+    background: black;
+    margin-right: 10px;
+}
+
+.crystals img {
+    height: 75px;
+    width: 65px;
 }
 
 .bottom {
@@ -48,4 +56,22 @@ body {
     margin-bottom: 50px;
     padding-bottom: 50px;
     font-size: 30px;
+}
+
+@media screen and (max-width: 400px) {
+    .crystals img {
+        height: 40px;
+        width: 40px;
+        background: black;
+    }
+    .crystals {
+        margin-right: 40px;
+        background: none;
+    }
+    .count-holder {
+        padding-right: 80px;
+    }
+    .heading {
+        padding-right: 200px;
+    }
 }
