@@ -1,0 +1,51 @@
+body {
+    background-image: url("../images/pow-star.png");
+}
+
+.heading {
+    background: rgb(38, 224, 21);
+    color: white;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.directions {
+    background: rgb(7, 180, 180);
+    color: white;
+    margin-top: 10px;
+}
+
+.number-holder {
+    margin-top: 10px;
+    margin-right: 10px;
+    background: rgb(180, 76, 180);
+    color: white;
+    font-size: 30px;
+}
+
+.count-holder {
+    margin-top: 10px;
+    background: rgb(179, 64, 83);
+    color: white;
+    /* padding: 10px; */
+    text-align: left;
+}
+
+.crystals {
+    margin-top: 10px;
+}
+
+.bottom {
+    background: orange;
+    color: white;
+    margin-top: 10px;
+}
+
+.bottom-score {
+    background: orange;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    font-size: 30px;
+}
