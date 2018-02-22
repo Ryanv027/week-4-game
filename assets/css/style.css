@@ -58,6 +58,19 @@ body {
     font-size: 30px;
 }
 
+#message {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-top: 40px;
+}
+
+.messages {
+    background: rgb(18, 185, 207);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
 @media screen and (max-width: 400px) {
     .crystals img {
         height: 40px;

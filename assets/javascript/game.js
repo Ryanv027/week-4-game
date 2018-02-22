@@ -28,6 +28,7 @@ $("#crys-1").on("click", function() {
         userNum1 = Math.floor(Math.random() * (12 - 1) + 1);
         totalNumber = userNum1
         activeScore(totalNumber);
+        $("#message").empty()
         scoreChecker()
     } else if (totalNumber > 0 && userNum1 === 0) {
         userNum1 = Math.floor(Math.random() * (5 - 1) + 1);
@@ -46,9 +47,10 @@ $("#crys-2").on("click", function() {
         userNum2 = Math.floor(Math.random() * (12 - 1) + 1);
         totalNumber = userNum2;
         activeScore(totalNumber);
+        $("#message").empty()
         scoreChecker()
     } else if (totalNumber > 0 && userNum2 === 0) {
-        userNum2 = Math.floor(Math.random() * (4 - 1) + 1);
+        userNum2 = Math.floor(Math.random() * (5 - 1) + 1);
         totalNumber = userNum2 + totalNumber;
         activeScore(totalNumber);
         scoreChecker()
@@ -64,9 +66,10 @@ $("#crys-3").on("click", function() {
         userNum3 = Math.floor(Math.random() * (12 - 1) + 1);
         totalNumber = userNum3;
         activeScore(totalNumber);
+        $("#message").empty()
         scoreChecker()
     } else if (totalNumber > 0 && userNum3 === 0) {
-        userNum3 = Math.floor(Math.random() * (3 - 1) + 1);
+        userNum3 = Math.floor(Math.random() * (6 - 1) + 1);
         totalNumber = userNum3 + totalNumber;
         activeScore(totalNumber);
         scoreChecker()
@@ -82,6 +85,7 @@ $("#crys-4").on("click", function() {
         userNum4 = Math.floor(Math.random() * (12 - 1) + 1);
         totalNumber = userNum4;
         activeScore(totalNumber);
+        $("#message").empty()
         scoreChecker()
     } else if (totalNumber > 0 && userNum4 === 0) {
         userNum4 = Math.floor(Math.random() * (2 - 1) + 1);
@@ -102,12 +106,14 @@ function scoreChecker() {
     if (startingNumber === totalNumber) {
         winCount++
         $("#win-counter").html(winCount)
+        $("#message").html('You win!')
         computersNumber()
         totalNumber = 0
         activeScore(totalNumber)
     } else if (totalNumber > startingNumber) {
         lossCount++
         $("#loss-counter").html(lossCount)
+        $("#message").html('You lost!')
         computersNumber()
         totalNumber = 0
         activeScore(totalNumber)
