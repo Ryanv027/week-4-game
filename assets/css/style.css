@@ -87,4 +87,7 @@ body {
     .heading {
         padding-right: 200px;
     }
+    #message {
+        font-size: 30px;
+    }
 }
