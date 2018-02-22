@@ -10,7 +10,7 @@ lossCount = 0
 
 //Create a random number between 19 and 120
 function computersNumber() {
-    startingNumber = Math.floor(Math.random() * (120 - 19) + 19)
+    startingNumber = Math.floor(Math.random() * (80 - 19) + 19)
     $("#random-number").html(startingNumber);
     $("#loss-counter").html(lossCount);
     $("#win-counter").html(winCount);
